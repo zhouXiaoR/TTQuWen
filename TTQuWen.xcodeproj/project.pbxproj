@@ -13,9 +13,11 @@
 		69152D3F21F166C8003E7419 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69152D3E21F166C8003E7419 /* Assets.xcassets */; };
 		69152D4221F166C8003E7419 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69152D4021F166C8003E7419 /* LaunchScreen.storyboard */; };
 		69152D4521F166C8003E7419 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 69152D4421F166C8003E7419 /* main.m */; };
+		E4DAA1420573258728D2AB75 /* Pods_TTQuWen.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 92565FB9A06B546B1F29568A /* Pods_TTQuWen.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21B84EC109BA1183AEE191B7 /* Pods-TTQuWen.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTQuWen.release.xcconfig"; path = "Pods/Target Support Files/Pods-TTQuWen/Pods-TTQuWen.release.xcconfig"; sourceTree = "<group>"; };
 		69152D3221F166C6003E7419 /* TTQuWen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TTQuWen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		69152D3521F166C6003E7419 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		69152D3621F166C6003E7419 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -26,6 +28,8 @@
 		69152D4121F166C8003E7419 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		69152D4321F166C8003E7419 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		69152D4421F166C8003E7419 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		92565FB9A06B546B1F29568A /* Pods_TTQuWen.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TTQuWen.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF16DFBF829E9E87F3FD4FEF /* Pods-TTQuWen.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TTQuWen.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TTQuWen/Pods-TTQuWen.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +37,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E4DAA1420573258728D2AB75 /* Pods_TTQuWen.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3C7160BF8264DEE7195DDF99 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF16DFBF829E9E87F3FD4FEF /* Pods-TTQuWen.debug.xcconfig */,
+				21B84EC109BA1183AEE191B7 /* Pods-TTQuWen.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		69152D2921F166C6003E7419 = {
 			isa = PBXGroup;
 			children = (
 				69152D3421F166C6003E7419 /* TTQuWen */,
 				69152D3321F166C6003E7419 /* Products */,
+				3C7160BF8264DEE7195DDF99 /* Pods */,
+				7620315D4173D5F9F2B27C3F /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -71,6 +87,14 @@
 			path = TTQuWen;
 			sourceTree = "<group>";
 		};
+		7620315D4173D5F9F2B27C3F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				92565FB9A06B546B1F29568A /* Pods_TTQuWen.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -78,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 69152D4821F166C8003E7419 /* Build configuration list for PBXNativeTarget "TTQuWen" */;
 			buildPhases = (
+				E167BC64567F92AA402217C5 /* [CP] Check Pods Manifest.lock */,
 				69152D2E21F166C6003E7419 /* Sources */,
 				69152D2F21F166C6003E7419 /* Frameworks */,
 				69152D3021F166C6003E7419 /* Resources */,
+				FA066266CF0B5D28F628162D /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +161,45 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E167BC64567F92AA402217C5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TTQuWen-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FA066266CF0B5D28F628162D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TTQuWen/Pods-TTQuWen-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTQuWen/Pods-TTQuWen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		69152D2E21F166C6003E7419 /* Sources */ = {
@@ -283,14 +348,12 @@
 		};
 		69152D4921F166C8003E7419 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF16DFBF829E9E87F3FD4FEF /* Pods-TTQuWen.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TTQuWen/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ta.TTQuWen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -299,14 +362,12 @@
 		};
 		69152D4A21F166C8003E7419 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 21B84EC109BA1183AEE191B7 /* Pods-TTQuWen.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TTQuWen/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.ta.TTQuWen;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
