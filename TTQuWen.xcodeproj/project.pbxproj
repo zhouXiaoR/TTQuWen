@@ -106,6 +106,7 @@
 				69152D2E21F166C6003E7419 /* Sources */,
 				69152D2F21F166C6003E7419 /* Frameworks */,
 				69152D3021F166C6003E7419 /* Resources */,
+				4171CF3241C0D3A3F9C4E9F2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -162,6 +163,24 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4171CF3241C0D3A3F9C4E9F2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TTQuWen/Pods-TTQuWen-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TTQuWen/Pods-TTQuWen-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		E167BC64567F92AA402217C5 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
